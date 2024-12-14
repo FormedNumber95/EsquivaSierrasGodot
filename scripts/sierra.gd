@@ -9,10 +9,8 @@ func _physics_process(delta: float) -> void:
 
 func _on_body_entered(body: Node) -> void:
 	if body is Jugador:
-		print("JUGADOR")
 		if (body.has_method("tocado")):
 			body.tocado()
 	else:
-		print("SUELO")
 		gameManager.conseguir_puntos()
 	queue_free()

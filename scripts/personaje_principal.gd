@@ -3,7 +3,7 @@ extends CharacterBody2D
 
 signal jugadorEliminado()
 
-const SPEED:float = 300.0
+const SPEED:float = 350.0
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.

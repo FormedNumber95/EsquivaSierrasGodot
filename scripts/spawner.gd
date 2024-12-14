@@ -17,7 +17,6 @@ func generarSierra():
 	sierra.position.y=position.y
 	sierra.gameManager=gameManager
 	add_child(sierra)
-	print(mi_posicion)
 	
 func pararDeGenerar():
 	$Timer.stop()
