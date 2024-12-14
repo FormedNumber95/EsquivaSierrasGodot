@@ -1,0 +1,88 @@
+[gd_scene load_steps=11 format=3 uid="uid://b4trso4tvmjbv"]
+
+[ext_resource type="Texture2D" uid="uid://dmahi6n3wxui6" path="res://imagenes/BG.png" id="1_24xnt"]
+[ext_resource type="PackedScene" uid="uid://bkb3qmm7juh0a" path="res://escenas/personajePrincipal.tscn" id="1_jteo0"]
+[ext_resource type="Texture2D" uid="uid://csdnfsnb83jfy" path="res://imagenes/2.png" id="3_igds3"]
+[ext_resource type="Script" path="res://scripts/game_manager.gd" id="5_keqhu"]
+[ext_resource type="Script" path="res://scripts/spawner.gd" id="5_xdtvd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7cxgm"]
+size = Vector2(653, 31)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_g57gm"]
+texture = ExtResource("3_igds3")
+texture_region_size = Vector2i(128, 128)
+0:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_g88vl"]
+tile_size = Vector2i(128, 128)
+sources/0 = SubResource("TileSetAtlasSource_g57gm")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1j1nr"]
+size = Vector2(21, 915)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4uxuj"]
+size = Vector2(20, 916)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Backgroud" type="Sprite2D" parent="."]
+position = Vector2(6.5, -13.25)
+scale = Vector2(0.663, 1.47267)
+texture = ExtResource("1_24xnt")
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_jteo0")]
+position = Vector2(0, 338)
+
+[node name="suelo" type="StaticBody2D" parent="."]
+position = Vector2(-310, 410)
+collision_layer = 3
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="suelo"]
+position = Vector2(320, 15)
+shape = SubResource("RectangleShape2D_7cxgm")
+
+[node name="TileMapLayer" type="TileMapLayer" parent="suelo"]
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+tile_set = SubResource("TileSet_g88vl")
+
+[node name="Paredes" type="StaticBody2D" parent="."]
+position = Vector2(-299, -481)
+collision_layer = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Paredes"]
+position = Vector2(607, 449)
+shape = SubResource("RectangleShape2D_1j1nr")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Paredes"]
+position = Vector2(-7, 446)
+shape = SubResource("RectangleShape2D_4uxuj")
+
+[node name="Spawner" type="Node2D" parent="."]
+position = Vector2(0, -600)
+script = ExtResource("5_xdtvd")
+
+[node name="Timer" type="Timer" parent="Spawner"]
+autostart = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+offset_left = 165.0
+offset_top = 22.0
+offset_right = 466.0
+offset_bottom = 149.0
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_font_sizes/font_size = 100
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="GameManager" type="Node2D" parent="."]
+script = ExtResource("5_keqhu")
+
+[connection signal="jugadorEliminado" from="CharacterBody2D" to="GameManager" method="game_over"]
+[connection signal="timeout" from="Spawner/Timer" to="Spawner" method="_on_timer_timeout"]

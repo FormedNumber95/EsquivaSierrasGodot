@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://bkb3qmm7juh0a"]
+
+[ext_resource type="Texture2D" uid="uid://cwwi12r6bwh3f" path="res://kenney_toon-characters-1/Male person/PNG/Poses/character_malePerson_idle.png" id="1_802nb"]
+[ext_resource type="Script" path="res://scripts/personaje_principal.gd" id="1_swqv2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fxr0u"]
+size = Vector2(68, 91)
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+collision_mask = 9
+script = ExtResource("1_swqv2")
+
+[node name="CharacterMalePersonIdle" type="Sprite2D" parent="."]
+texture = ExtResource("1_802nb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 18.5)
+shape = SubResource("RectangleShape2D_fxr0u")
