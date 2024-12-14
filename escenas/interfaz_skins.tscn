@@ -1,0 +1,97 @@
+[gd_scene load_steps=8 format=3 uid="uid://donx0rbiagjqp"]
+
+[ext_resource type="PackedScene" uid="uid://cxecypcdwds4g" path="res://escenas/camara_menus.tscn" id="1_15ewi"]
+[ext_resource type="Texture2D" uid="uid://bqjfr6sieoec5" path="res://imagenes/personajes/Robot/character_robot_idle.png" id="2_i28df"]
+[ext_resource type="Texture2D" uid="uid://cwwi12r6bwh3f" path="res://imagenes/personajes/malePerson/character_malePerson_idle.png" id="2_rlc15"]
+[ext_resource type="Texture2D" uid="uid://cbrr0impodloe" path="res://imagenes/personajes/Zombie/character_zombie_idle.png" id="3_5wmav"]
+[ext_resource type="Texture2D" uid="uid://bcflmmiob0ryr" path="res://imagenes/personajes/femalePerson/character_femalePerson_idle.png" id="5_x61oa"]
+[ext_resource type="Texture2D" uid="uid://by0v01aj4h6mn" path="res://imagenes/personajes/maleAdventurer/character_maleAdventurer_idle.png" id="6_4txeq"]
+[ext_resource type="Texture2D" uid="uid://bf82dlbkjvnji" path="res://imagenes/personajes/femaleAdventurer/character_femaleAdventurer_idle.png" id="7_r8iha"]
+
+[node name="interfazSkins" type="CanvasLayer"]
+
+[node name="CamaraMenus" parent="." instance=ExtResource("1_15ewi")]
+
+[node name="BtnSkinMalePerson" type="Button" parent="."]
+anchors_preset = -1
+anchor_left = 0.052
+anchor_top = 0.072
+anchor_right = 0.463
+anchor_bottom = 0.313
+offset_left = -0.200001
+offset_right = 0.199982
+offset_bottom = -3.05176e-05
+theme_override_font_sizes/font_size = 100
+icon = ExtResource("2_rlc15")
+icon_alignment = 1
+expand_icon = true
+
+[node name="BtnFemalePerson" type="Button" parent="."]
+anchors_preset = -1
+anchor_left = 0.57
+anchor_top = 0.072
+anchor_right = 0.982
+anchor_bottom = 0.313
+offset_left = -3.05176e-05
+offset_right = -0.200012
+offset_bottom = -3.05176e-05
+theme_override_font_sizes/font_size = 100
+icon = ExtResource("5_x61oa")
+icon_alignment = 1
+expand_icon = true
+
+[node name="BtnMaleAdventurer" type="Button" parent="."]
+anchors_preset = -1
+anchor_left = 0.055
+anchor_top = 0.384
+anchor_right = 0.463
+anchor_bottom = 0.625
+offset_left = -2.0
+offset_right = 0.199982
+theme_override_font_sizes/font_size = 100
+icon = ExtResource("6_4txeq")
+icon_alignment = 1
+expand_icon = true
+
+[node name="BtnFemaleAdventurer" type="Button" parent="."]
+anchors_preset = -1
+anchor_left = 0.57
+anchor_top = 0.384
+anchor_right = 0.982
+anchor_bottom = 0.625
+offset_left = -3.05176e-05
+offset_right = -0.200012
+theme_override_font_sizes/font_size = 100
+icon = ExtResource("7_r8iha")
+icon_alignment = 1
+expand_icon = true
+
+[node name="BtnRobot" type="Button" parent="."]
+anchors_preset = -1
+anchor_left = 0.052
+anchor_top = 0.696
+anchor_right = 0.463
+anchor_bottom = 0.937
+offset_left = -0.200001
+offset_top = -6.10352e-05
+offset_right = 0.199982
+offset_bottom = -6.10352e-05
+theme_override_font_sizes/font_size = 100
+icon = ExtResource("2_i28df")
+icon_alignment = 1
+expand_icon = true
+
+[node name="BtnZombie" type="Button" parent="."]
+anchors_preset = -1
+anchor_left = 0.57
+anchor_top = 0.696
+anchor_right = 0.982
+anchor_bottom = 0.937
+offset_left = -3.05176e-05
+offset_top = -6.10352e-05
+offset_right = -0.200012
+offset_bottom = -6.10352e-05
+theme_override_font_sizes/font_size = 100
+icon = ExtResource("3_5wmav")
+icon_alignment = 1
+expand_icon = true

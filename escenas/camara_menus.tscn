@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://cxecypcdwds4g"]
+
+[ext_resource type="Texture2D" uid="uid://dmahi6n3wxui6" path="res://imagenes/BG.png" id="1_o6dj3"]
+[ext_resource type="Texture2D" uid="uid://csdnfsnb83jfy" path="res://imagenes/2.png" id="2_xs71u"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qypki"]
+size = Vector2(653, 31)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_e2adk"]
+texture = ExtResource("2_xs71u")
+texture_region_size = Vector2i(128, 128)
+0:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_i8mts"]
+tile_size = Vector2i(128, 128)
+sources/0 = SubResource("TileSetAtlasSource_e2adk")
+
+[node name="CamaraMenus" type="Camera2D"]
+position = Vector2(300, 489)
+
+[node name="Backgroud" type="Sprite2D" parent="."]
+position = Vector2(6.5, -13.25)
+scale = Vector2(0.663, 1.47267)
+texture = ExtResource("1_o6dj3")
+
+[node name="suelo" type="StaticBody2D" parent="."]
+position = Vector2(-310, 410)
+collision_layer = 3
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="suelo"]
+position = Vector2(320, 15)
+shape = SubResource("RectangleShape2D_qypki")
+
+[node name="TileMapLayer" type="TileMapLayer" parent="suelo"]
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+tile_set = SubResource("TileSet_i8mts")
