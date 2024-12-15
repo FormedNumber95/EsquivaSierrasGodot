@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://bkb3qmm7juh0a"]
 
-[ext_resource type="Texture2D" uid="uid://cwwi12r6bwh3f" path="res://imagenes/personajes/malePerson/idle.png" id="1_802nb"]
 [ext_resource type="Script" path="res://scripts/personaje_principal.gd" id="1_swqv2"]
+[ext_resource type="Texture2D" uid="uid://dw6hiwalaw0we" path="res://imagenes/personajes/malePerson/run0.png" id="2_ogq05"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fxr0u"]
 size = Vector2(68, 91)
@@ -11,8 +11,13 @@ collision_mask = 9
 script = ExtResource("1_swqv2")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_802nb")
+texture = ExtResource("2_ogq05")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 18.5)
 shape = SubResource("RectangleShape2D_fxr0u")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.2
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
