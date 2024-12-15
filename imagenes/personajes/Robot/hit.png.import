@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dtnckc2p0xd73"
-path="res://.godot/imported/character_robot_run1.png-e38bd6e695bcb55ae21aef07f4c95e69.ctex"
+uid="uid://ddq5gpoipnts3"
+path="res://.godot/imported/hit.png-344815594add3eb8d58ac897ff2a759b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://imagenes/personajes/Robot/character_robot_run1.png"
-dest_files=["res://.godot/imported/character_robot_run1.png-e38bd6e695bcb55ae21aef07f4c95e69.ctex"]
+source_file="res://imagenes/personajes/Robot/hit.png"
+dest_files=["res://.godot/imported/hit.png-344815594add3eb8d58ac897ff2a759b.ctex"]
 
 [params]
 

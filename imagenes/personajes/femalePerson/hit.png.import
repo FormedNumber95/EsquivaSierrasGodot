@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dipgcsps8b73m"
-path="res://.godot/imported/character_maleAdventurer_run0.png-ff54b34c9cb0115577662afb045df8b7.ctex"
+uid="uid://c0cwagvo8u42g"
+path="res://.godot/imported/hit.png-3465c62b30dd2a700f93f96a79571efa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://imagenes/personajes/maleAdventurer/character_maleAdventurer_run0.png"
-dest_files=["res://.godot/imported/character_maleAdventurer_run0.png-ff54b34c9cb0115577662afb045df8b7.ctex"]
+source_file="res://imagenes/personajes/femalePerson/hit.png"
+dest_files=["res://.godot/imported/hit.png-3465c62b30dd2a700f93f96a79571efa.ctex"]
 
 [params]
 

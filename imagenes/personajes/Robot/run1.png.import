@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://by0v01aj4h6mn"
-path="res://.godot/imported/character_maleAdventurer_idle.png-3911ef5e16e8ee86ddc429b0c124293f.ctex"
+uid="uid://dtnckc2p0xd73"
+path="res://.godot/imported/run1.png-d4d10c362eb60add60a358528c9bfadb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://imagenes/personajes/maleAdventurer/character_maleAdventurer_idle.png"
-dest_files=["res://.godot/imported/character_maleAdventurer_idle.png-3911ef5e16e8ee86ddc429b0c124293f.ctex"]
+source_file="res://imagenes/personajes/Robot/run1.png"
+dest_files=["res://.godot/imported/run1.png-d4d10c362eb60add60a358528c9bfadb.ctex"]
 
 [params]
 

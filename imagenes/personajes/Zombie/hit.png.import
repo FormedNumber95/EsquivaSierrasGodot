@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bf82dlbkjvnji"
-path="res://.godot/imported/character_femaleAdventurer_idle.png-a32b82b879a6d51dc0d70eabf7011ab7.ctex"
+uid="uid://c40ak8jugee53"
+path="res://.godot/imported/hit.png-f9629d6c4719e8f5c0e80e7150dcd8d3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://imagenes/personajes/femaleAdventurer/character_femaleAdventurer_idle.png"
-dest_files=["res://.godot/imported/character_femaleAdventurer_idle.png-a32b82b879a6d51dc0d70eabf7011ab7.ctex"]
+source_file="res://imagenes/personajes/Zombie/hit.png"
+dest_files=["res://.godot/imported/hit.png-f9629d6c4719e8f5c0e80e7150dcd8d3.ctex"]
 
 [params]
 

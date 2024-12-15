@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://duqti1geq0nn8"
-path="res://.godot/imported/character_zombie_run2.png-7ce7e3f2541d435dd3af132933e6b91a.ctex"
+uid="uid://bf82dlbkjvnji"
+path="res://.godot/imported/idle.png-1385aef39ccbe7966fc88cf013893c7d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://imagenes/personajes/Zombie/character_zombie_run2.png"
-dest_files=["res://.godot/imported/character_zombie_run2.png-7ce7e3f2541d435dd3af132933e6b91a.ctex"]
+source_file="res://imagenes/personajes/femaleAdventurer/idle.png"
+dest_files=["res://.godot/imported/idle.png-1385aef39ccbe7966fc88cf013893c7d.ctex"]
 
 [params]
 

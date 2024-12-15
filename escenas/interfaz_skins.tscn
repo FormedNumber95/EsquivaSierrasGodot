@@ -1,12 +1,13 @@
-[gd_scene load_steps=8 format=3 uid="uid://donx0rbiagjqp"]
+[gd_scene load_steps=9 format=3 uid="uid://donx0rbiagjqp"]
 
 [ext_resource type="PackedScene" uid="uid://cxecypcdwds4g" path="res://escenas/camara_menus.tscn" id="1_15ewi"]
-[ext_resource type="Texture2D" uid="uid://bqjfr6sieoec5" path="res://imagenes/personajes/Robot/character_robot_idle.png" id="2_i28df"]
-[ext_resource type="Texture2D" uid="uid://cwwi12r6bwh3f" path="res://imagenes/personajes/malePerson/character_malePerson_idle.png" id="2_rlc15"]
-[ext_resource type="Texture2D" uid="uid://cbrr0impodloe" path="res://imagenes/personajes/Zombie/character_zombie_idle.png" id="3_5wmav"]
-[ext_resource type="Texture2D" uid="uid://bcflmmiob0ryr" path="res://imagenes/personajes/femalePerson/character_femalePerson_idle.png" id="5_x61oa"]
-[ext_resource type="Texture2D" uid="uid://by0v01aj4h6mn" path="res://imagenes/personajes/maleAdventurer/character_maleAdventurer_idle.png" id="6_4txeq"]
-[ext_resource type="Texture2D" uid="uid://bf82dlbkjvnji" path="res://imagenes/personajes/femaleAdventurer/character_femaleAdventurer_idle.png" id="7_r8iha"]
+[ext_resource type="Texture2D" uid="uid://bqjfr6sieoec5" path="res://imagenes/personajes/Robot/idle.png" id="2_i28df"]
+[ext_resource type="Texture2D" uid="uid://cwwi12r6bwh3f" path="res://imagenes/personajes/malePerson/idle.png" id="2_rlc15"]
+[ext_resource type="Texture2D" uid="uid://cbrr0impodloe" path="res://imagenes/personajes/Zombie/idle.png" id="3_5wmav"]
+[ext_resource type="Texture2D" uid="uid://bcflmmiob0ryr" path="res://imagenes/personajes/femalePerson/idle.png" id="5_x61oa"]
+[ext_resource type="Texture2D" uid="uid://by0v01aj4h6mn" path="res://imagenes/personajes/maleAdventurer/idle.png" id="6_4txeq"]
+[ext_resource type="Texture2D" uid="uid://bf82dlbkjvnji" path="res://imagenes/personajes/femaleAdventurer/idle.png" id="7_r8iha"]
+[ext_resource type="Script" path="res://scripts/gestor_skins.gd" id="8_2ehqk"]
 
 [node name="interfazSkins" type="CanvasLayer"]
 
@@ -95,3 +96,13 @@ theme_override_font_sizes/font_size = 100
 icon = ExtResource("3_5wmav")
 icon_alignment = 1
 expand_icon = true
+
+[node name="GestorSkins" type="Node2D" parent="."]
+script = ExtResource("8_2ehqk")
+
+[connection signal="button_down" from="BtnSkinMalePerson" to="GestorSkins" method="_on_btn_skin_male_person_button_down"]
+[connection signal="button_down" from="BtnFemalePerson" to="GestorSkins" method="_on_btn_female_person_button_down"]
+[connection signal="button_down" from="BtnMaleAdventurer" to="GestorSkins" method="_on_btn_male_adventurer_button_down"]
+[connection signal="button_down" from="BtnFemaleAdventurer" to="GestorSkins" method="_on_btn_female_adventurer_button_down"]
+[connection signal="button_down" from="BtnRobot" to="GestorSkins" method="_on_btn_robot_button_down"]
+[connection signal="button_down" from="BtnZombie" to="GestorSkins" method="_on_btn_zombie_button_down"]

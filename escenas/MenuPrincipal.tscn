@@ -1,44 +1,12 @@
-[gd_scene load_steps=7 format=3 uid="uid://csqu6ok1km4sl"]
+[gd_scene load_steps=3 format=3 uid="uid://csqu6ok1km4sl"]
 
 [ext_resource type="Script" path="res://scripts/menu_principal.gd" id="1_ctmin"]
-[ext_resource type="Texture2D" uid="uid://dmahi6n3wxui6" path="res://imagenes/BG.png" id="2_8i6q5"]
-[ext_resource type="Texture2D" uid="uid://csdnfsnb83jfy" path="res://imagenes/2.png" id="3_w5wl3"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_qypki"]
-size = Vector2(653, 31)
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_e2adk"]
-texture = ExtResource("3_w5wl3")
-texture_region_size = Vector2i(128, 128)
-0:0/0 = 0
-
-[sub_resource type="TileSet" id="TileSet_i8mts"]
-tile_size = Vector2i(128, 128)
-sources/0 = SubResource("TileSetAtlasSource_e2adk")
+[ext_resource type="PackedScene" uid="uid://cxecypcdwds4g" path="res://escenas/camara_menus.tscn" id="2_7nxml"]
 
 [node name="CanvasLayer" type="CanvasLayer"]
 script = ExtResource("1_ctmin")
 
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(300, 489)
-
-[node name="Backgroud" type="Sprite2D" parent="Camera2D"]
-position = Vector2(6.5, -13.25)
-scale = Vector2(0.663, 1.47267)
-texture = ExtResource("2_8i6q5")
-
-[node name="suelo" type="StaticBody2D" parent="Camera2D"]
-position = Vector2(-310, 410)
-collision_layer = 3
-collision_mask = 2
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Camera2D/suelo"]
-position = Vector2(320, 15)
-shape = SubResource("RectangleShape2D_qypki")
-
-[node name="TileMapLayer" type="TileMapLayer" parent="Camera2D/suelo"]
-tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
-tile_set = SubResource("TileSet_i8mts")
+[node name="CamaraMenus" parent="." instance=ExtResource("2_7nxml")]
 
 [node name="BtnEmpezar" type="Button" parent="."]
 anchors_preset = -1
@@ -76,4 +44,5 @@ theme_override_font_sizes/font_size = 100
 text = "Salir"
 
 [connection signal="button_down" from="BtnEmpezar" to="." method="_on_btn_empezar_button_down"]
+[connection signal="button_down" from="BtnSkin" to="." method="_on_btn_skin_button_down"]
 [connection signal="button_down" from="BtnSalir" to="." method="_on_btn_salir_button_down"]

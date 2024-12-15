@@ -22,3 +22,7 @@ func _physics_process(delta: float) -> void:
 func tocado():
 	jugadorEliminado.emit()
 	queue_free()
+
+func cambiar_textura(ruta_textura: String) -> void:
+	var nueva_textura = load(ruta_textura)  # Carga la textura desde la ruta
+	$Sprite2D.texture = nueva_textura

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ddq5gpoipnts3"
-path="res://.godot/imported/character_robot_hit.png-49944975e2d4acbad516a539bd4d7a3d.ctex"
+uid="uid://bqjfr6sieoec5"
+path="res://.godot/imported/idle.png-2bb6cb0a824b8aa0f85fc4516a814be1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://imagenes/personajes/Robot/character_robot_hit.png"
-dest_files=["res://.godot/imported/character_robot_hit.png-49944975e2d4acbad516a539bd4d7a3d.ctex"]
+source_file="res://imagenes/personajes/Robot/idle.png"
+dest_files=["res://.godot/imported/idle.png-2bb6cb0a824b8aa0f85fc4516a814be1.ctex"]
 
 [params]
 

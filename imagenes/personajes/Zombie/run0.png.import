@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ban4jipcagpgf"
-path="res://.godot/imported/character_femaleAdventurer_hit.png-dae5203da0d6f3db65745c18d711f233.ctex"
+uid="uid://b2m0oxgwqeanm"
+path="res://.godot/imported/run0.png-021d2d7538d1becc4bc0697454e74ac5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://imagenes/personajes/femaleAdventurer/character_femaleAdventurer_hit.png"
-dest_files=["res://.godot/imported/character_femaleAdventurer_hit.png-dae5203da0d6f3db65745c18d711f233.ctex"]
+source_file="res://imagenes/personajes/Zombie/run0.png"
+dest_files=["res://.godot/imported/run0.png-021d2d7538d1becc4bc0697454e74ac5.ctex"]
 
 [params]
 

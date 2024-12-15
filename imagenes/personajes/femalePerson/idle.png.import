@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cjjg01cmbbr83"
-path="res://.godot/imported/character_femaleAdventurer_run2.png-05b3656f3c69d35551ee2b141749467f.ctex"
+uid="uid://bcflmmiob0ryr"
+path="res://.godot/imported/idle.png-115d3328f2131b41d6d15232dca04f9f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://imagenes/personajes/femaleAdventurer/character_femaleAdventurer_run2.png"
-dest_files=["res://.godot/imported/character_femaleAdventurer_run2.png-05b3656f3c69d35551ee2b141749467f.ctex"]
+source_file="res://imagenes/personajes/femalePerson/idle.png"
+dest_files=["res://.godot/imported/idle.png-115d3328f2131b41d6d15232dca04f9f.ctex"]
 
 [params]
 

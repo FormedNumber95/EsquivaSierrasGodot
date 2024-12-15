@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dbn3dbcbix542"
-path="res://.godot/imported/character_femalePerson_run1.png-7a33318a705aedcc1074c53ba5fa4ba4.ctex"
+uid="uid://dxbj5r02ru1pr"
+path="res://.godot/imported/run2.png-adf7d2a6cd54408ff90d1629ca681060.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://imagenes/personajes/femalePerson/character_femalePerson_run1.png"
-dest_files=["res://.godot/imported/character_femalePerson_run1.png-7a33318a705aedcc1074c53ba5fa4ba4.ctex"]
+source_file="res://imagenes/personajes/femalePerson/run2.png"
+dest_files=["res://.godot/imported/run2.png-adf7d2a6cd54408ff90d1629ca681060.ctex"]
 
 [params]
 

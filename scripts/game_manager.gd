@@ -1,13 +1,20 @@
 class_name GameManager
 extends Node2D
 
+const escenaMuerte="res://escenas/interfaz_botones_restart.tscn"
+
 var generador:Node2D
+var jugador:CharacterBody2D
 var puntos:int=0
 var gameOver:bool=false
-const escenaMuerte="res://escenas/interfaz_botones_restart.tscn"
+var skin_elegida
 
 func _ready() -> void:
 	generador=get_node("../Spawner")
+	jugador=get_node("../CharacterBody2D")
+	#TODO Fijar la skin del jugador en funcion de la variable skin del gestor_skins
+	skin_elegida=SelectorSkins.new().skin
+	jugador.cambiar_textura(skin_elegida+"idle.png")
 
 func conseguir_puntos():
 	if(!gameOver):

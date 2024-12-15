@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c40ak8jugee53"
-path="res://.godot/imported/character_zombie_hit.png-f83014775ecabdad33d6704057220155.ctex"
+uid="uid://dy5lj4ekd1brm"
+path="res://.godot/imported/run1.png-125a3b77ffbaa81451277a0c12cb68f6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://imagenes/personajes/Zombie/character_zombie_hit.png"
-dest_files=["res://.godot/imported/character_zombie_hit.png-f83014775ecabdad33d6704057220155.ctex"]
+source_file="res://imagenes/personajes/Zombie/run1.png"
+dest_files=["res://.godot/imported/run1.png-125a3b77ffbaa81451277a0c12cb68f6.ctex"]
 
 [params]
 

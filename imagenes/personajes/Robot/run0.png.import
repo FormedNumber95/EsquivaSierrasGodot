@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dvhk2cf01dek4"
-path="res://.godot/imported/character_malePerson_hit.png-d4f6548f9ef5bea81006eff2e03c419b.ctex"
+uid="uid://cj3qxjepd6pbk"
+path="res://.godot/imported/run0.png-1a0c8eda5b93c1950cc2a9154a9d6b5e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://imagenes/personajes/malePerson/character_malePerson_hit.png"
-dest_files=["res://.godot/imported/character_malePerson_hit.png-d4f6548f9ef5bea81006eff2e03c419b.ctex"]
+source_file="res://imagenes/personajes/Robot/run0.png"
+dest_files=["res://.godot/imported/run0.png-1a0c8eda5b93c1950cc2a9154a9d6b5e.ctex"]
 
 [params]
 
