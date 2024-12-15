@@ -46,7 +46,7 @@ func _physics_process(delta: float) -> void:
 	# TODO cambiar los controles por los controles personalizados
 		# Get the input direction and handle the movement/deceleration.
 		# As good practice, you should replace UI actions with custom gameplay actions.
-		var direction := Input.get_axis("ui_left", "ui_right")
+		var direction := Input.get_axis("izquierda", "derecha")
 		if direction:
 			velocity.x = direction * SPEED
 		else:
@@ -58,10 +58,11 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 
 func tocado():
-	jugadorEliminado.emit()
-	muerto=true
-	velocity.y= -20
-	$Timer.start(1)
+	if(!muerto):
+		jugadorEliminado.emit()
+		muerto=true
+		velocity.y= -20
+		$Timer.start(1)
 	
 
 func cambiar_textura(ruta_textura: String) -> void:

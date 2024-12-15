@@ -4,14 +4,12 @@ extends Node2D
 const escenaMuerte="res://escenas/interfaz_botones_restart.tscn"
 
 var generador:Node2D
-var jugador:CharacterBody2D
 var puntos:int=0
 var gameOver:bool=false
 
 
 func _ready() -> void:
 	generador=get_node("../Spawner")
-	jugador=get_node("../CharacterBody2D")
 
 func conseguir_puntos():
 	if(!gameOver):
